@@ -1,0 +1,19 @@
+Social Media Feed with Chat Integration:
+
+Features: Users can post updates, comment on posts, and chat with other users in real time.
+WebSockets: Implement real-time updates for comments and messages.
+SQL Server: Store user posts, comments, and chat histories.
+Notifications: Inform users about new comments, likes, or messages
+
+more feature from chatgpt
+Image Galleries: Allow users to upload and view multiple images in a single post
+
+Content Visibility: Let users control who can see their posts and comments.
+Block/Unfollow: Provide options for users to block or unfollow others 
+
+Enhanced Notifications:
+Push Notifications: For mobile apps, send push notifications for important activities like new comments or messages.
+In-App Notifications: Use a notification center where users can view all their notifications in one place 
+
+Profile Pages: Allow users to create and customize their profiles with a bio, profile picture, and cover photo.
+User Activity Feed: Show recent activities, such as posts and comments add this feature and show me the schema

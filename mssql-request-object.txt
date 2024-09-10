@@ -1,0 +1,32 @@
+const pool = await connectDb()
+const request = new sql.Request(pool) what is the return sql.request(pool)
+
+ChatGPT said:
+ChatGPT
+
+When you create a new sql.Request instance using new sql.Request(pool), 
+you are effectively creating a new request object 
+that you can use to execute SQL queries or stored procedures against a SQL Server database using the connection pool you've set up.
+
+Breakdown of new sql.Request(pool)
+
+sql.Request Constructor:
+The sql.Request constructor initializes a new request object. 
+This object represents a single request to the database and provides methods to set parameters, execute queries, and retrieve results.
+
+Connection Pool (pool):
+The pool object represents a connection pool to the SQL Server database. 
+A connection pool manages multiple connections to the database, allowing you to efficiently reuse connections for multiple requests.
+
+What new sql.Request(pool) Returns:
+
+Instance of sql.Request: The new sql.Request(pool) call returns an instance of the sql.Request class. 
+This instance is configured to use the connections provided by the pool.
+
+Using sql.Request
+With the sql.Request instance, you can:
+
+Set Parameters: Use request.input() to set parameters for your queries or stored procedures.
+Execute Queries: Use methods like request.query() to execute SQL queries and request.execute() to execute stored procedures.
+Retrieve Results: After executing a query, you can retrieve results through properties like recordset (for the rows returned by the query), 
+rowsAffected (number of rows affected), etc.
